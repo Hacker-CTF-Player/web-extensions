@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Hello ROHIT Input Filler",
+    "version": "1.0",
+    "description": "This extension finds all input fields and writes 'Hello ROHIT' into them.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+      }
+    }
+  }
+  
